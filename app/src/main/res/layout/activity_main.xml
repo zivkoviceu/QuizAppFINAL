@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="32dp"
+            android:text="Space Quiz"
+            android:textColor="#108cd3"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Enter your name:"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Earth's closest star is:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/alphacentauri"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onRadioButtonClicked"
+                android:text="Alpha Centauri"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/sun"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onRadioButtonClicked"
+                android:text="Sun"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/sirius"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onRadioButtonClicked"
+                android:text="Sirius"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="2. Which planets are gas giants?"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/venus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:onClick="onCheckboxClicked"
+            android:text="a) Venus"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/mars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:onClick="onCheckboxClicked"
+            android:text="b) Mars"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/jupiter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:onClick="onCheckboxClicked"
+            android:text="c) Jupiter"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/saturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:onClick="onCheckboxClicked"
+            android:text="d) Saturn"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="3. Which photo shows Saturn?:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:paddingLeft="24dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/mars" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/neptune" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/pluto" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/saturn" />
+
+        </LinearLayout>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="24dp">
+
+            <RadioButton
+                android:id="@+id/firsta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"
+                android:text="a)"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/secondb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"
+                android:text="b)"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/thirdc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"
+                android:text="c)"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/fourthd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"
+                android:text="d)"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="4. Distance from the Earth to The Moon is:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="5.500 km"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/second"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="64.000 km"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/third"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="380.000 km"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="5. Two planets that can be between Earth and Sun are:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/q5a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:onClick="onCheckboxClicked"
+            android:text="a) Uranus"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/q5b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:onClick="onCheckboxClicked"
+            android:text="b) Venus"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/q5c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:onClick="onCheckboxClicked"
+            android:text="c) Mercury"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/q5d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:onClick="onCheckboxClicked"
+            android:text="d) Jupiter"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="6. Which are famous space telescopes?"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/webb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:onClick="onCheckboxClicked"
+            android:text="a) Webb"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/newton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:onClick="onCheckboxClicked"
+            android:text="b) Newton"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/hubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:onClick="onCheckboxClicked"
+            android:text="b) Hubble"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/copernicus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:onClick="onCheckboxClicked"
+            android:text="c) Copernicus"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="7. Does the Sun orbit the Earth?"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/yes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onRadioButtonClicked"
+                android:text="Yes"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onRadioButtonClicked"
+                android:text="No"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="submitQuiz"
+            android:text="Results"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:onClick="reset"
+            android:text="Reset"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</ScrollView>
+
