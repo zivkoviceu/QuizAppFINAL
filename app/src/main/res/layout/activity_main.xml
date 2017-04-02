@@ -329,7 +329,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
             android:onClick="onCheckboxClicked"
-            android:text="b) Hubble"
+            android:text="c) Hubble"
             android:textSize="16sp" />
 
         <CheckBox
@@ -338,7 +338,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
             android:onClick="onCheckboxClicked"
-            android:text="c) Copernicus"
+            android:text="d) Copernicus"
             android:textSize="16sp" />
 
         <TextView

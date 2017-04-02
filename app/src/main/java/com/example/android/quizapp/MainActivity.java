@@ -52,18 +52,24 @@ public class MainActivity extends AppCompatActivity {
         String name = nameField.getText().toString();
 
 /**
- * If both are correct, then result increases by 1.
+ * If only (both) correct answers in checkbox questions are clicked, then result increases by 1.
  */
         if (both1 >= 2) {
             result = result + 1;
+        } else if (both1 < 2) {
+            result = result + 0;
         }
 
         if (both2 >= 2) {
             result = result + 1;
+        } else if (both2 < 2) {
+            result = result + 0;
         }
 
         if (both3 >= 2) {
             result = result + 1;
+        } else if (both3 < 2) {
+            result = result + 0;
         }
 
 
@@ -100,22 +106,24 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case venus:
                 if (checked) {
-                    both1 = both1 + 0;
+                    both1 = both1 - 1;
                 }
                 break;
             case R.id.mars:
                 if (checked) {
-                    both1 = both1 + 0;
+                    both1 = both1 - 1;
                 }
                 break;
             case R.id.jupiter:
                 if (checked) {
                     both1 = both1 + 1;
+                    // This is correct answer
                 }
                 break;
             case R.id.saturn:
                 if (checked) {
                     both1 = both1 + 1;
+                    // This is correct answer
                 }
                 break;
         }
@@ -125,22 +133,24 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.q5a:
                 if (checked) {
-                    both2 = both2 + 0;
+                    both2 = both2 - 1;
                 }
                 break;
             case R.id.q5b:
                 if (checked) {
                     both2 = both2 + 1;
+                    // This is correct answer
                 }
                 break;
             case R.id.q5c:
                 if (checked) {
                     both2 = both2 + 1;
+                    // This is correct answer
                 }
                 break;
             case R.id.q5d:
                 if (checked) {
-                    both2 = both2 + 0;
+                    both2 = both2 -1;
                 }
                 break;
         }
@@ -150,21 +160,23 @@ public class MainActivity extends AppCompatActivity {
             case R.id.webb:
                 if (checked) {
                     both3 = both3 + 1;
+                    // This is correct answer
                 }
                 break;
             case R.id.newton:
                 if (checked) {
-                    both3 = both3 + 0;
+                    both3 = both3 - 1;
                 }
                 break;
             case hubble:
                 if (checked) {
                     both3 = both3 + 1;
+                    // This is correct answer
                 }
                 break;
             case R.id.copernicus:
                 if (checked) {
-                    both3 = both3 + 0;
+                    both3 = both3 - 1;
                 }
                 break;
         }
@@ -191,6 +203,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.sun:
                 if (checked) {
                     result = result + 1;
+                    // This is correct answer
                 }
                 break;
             case R.id.sirius:
@@ -218,6 +231,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.fourthd:
                 if (checked) {
                     result = result + 1;
+                    // This is correct answer
                 }
                 break;
 
@@ -235,6 +249,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.third:
                 if (checked) {
                     result = result + 1;
+                    // This is correct answer
                 }
                 break;
 
@@ -247,6 +262,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.no:
                 if (checked) {
                     result = result + 1;
+                    // This is correct answer
                 }
                 break;
 
